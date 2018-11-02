@@ -141,6 +141,8 @@ if __name__ == "__main__":
 
     audio_paths = glob(config.audio_pattern)
 
+    print ("audio path:", audio_paths)
+
     split_on_silence_batch(
             audio_paths, config.method,
             out_ext=config.out_ext,
